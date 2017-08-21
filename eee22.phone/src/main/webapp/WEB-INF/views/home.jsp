@@ -12,10 +12,8 @@
 <P>  The time on the server is ${serverTime}. </P>
 
 
-
-    <h2> PhoneController </h2> 
     <a href="/phone/writeone" target="_blank">/phone/writeone</a> <br />
-    <a href="/phone/writelist" target="_blank">/phone/writelist</a> <br />
+    <a href="/phone/writeonelist" target="_blank">/phone/writeonelist</a> <br />
     <hr>
     
 

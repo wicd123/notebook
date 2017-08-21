@@ -1,40 +1,40 @@
 package com.eee22.model;
 
 public class ModelPhone {
-  private String name         ;// NVARCHAR(20)    NOT NULL 
-  private String manufacturer ;// NVARCHAR(40)    NOT NULL 
-  private Integer price        ;// INTEGER         DEFAULT 0 NOT NULL 
-public String getName() {
-    return name;
+  private String phname         ;// NVARCHAR(20)    NOT NULL 
+  private String phfactory ;// NVARCHAR(40)    NOT NULL 
+  private Integer phprice        ;// INTEGER         DEFAULT 0 NOT NULL 
+public String getphname() {
+    return phname;
 }
-public void setName(String name) {
-    this.name = name;
+public void setphname(String phname) {
+    this.phname = phname;
 }
-public String getManufacturer() {
-    return manufacturer;
+public String getphfactory() {
+    return phfactory;
 }
-public void setManufacturer(String manufacturer) {
-    this.manufacturer = manufacturer;
+public void setphfactory(String phfactory) {
+    this.phfactory = phfactory;
 }
-public Integer getPrice() {
-    return price;
+public Integer getphprice() {
+    return phprice;
 }
-public void setPrice(Integer price) {
-    this.price = price;
+public void setphprice(Integer phprice) {
+    this.phprice = phprice;
 }
-public ModelPhone(String name, String manufacturer, Integer price) {
+public ModelPhone(String phname, String phfactory, Integer phprice) {
     super();
-    this.name = name;
-    this.manufacturer = manufacturer;
-    this.price = price;
+    this.phname = phname;
+    this.phfactory = phfactory;
+    this.phprice = phprice;
 }
 public ModelPhone() {
     super();
 }
 @Override
 public String toString() {
-    return "ModelPhone [name=" + name + ", manufacturer=" + manufacturer
-            + ", price=" + price + "]";
+    return "ModelPhone [phname=" + phname + ", phfactory=" + phfactory
+            + ", phprice=" + phprice + "]";
 }
   
 }

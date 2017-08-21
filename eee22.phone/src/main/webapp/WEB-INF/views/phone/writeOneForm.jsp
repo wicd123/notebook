@@ -20,30 +20,18 @@ th {
 <script>
 $(document).ready(function(e){
     $('#writeone1').click(function(e){
-           $('form').attr('action', '/phone/writeone1').submit();
+           $('form').attr('action', '/phone/writeonelist').submit();
            
     });
-    $('#writeone2').click(function(e){
-           $('form').attr('action', '/phone/writeone2').submit();
-        
-     });
-    $('#writeone3').click(function(e){
-        $('form').attr('action', '/phone/writeone3').submit();
-     
-  });
-    
 });
 </script>
 </head>
 <body>
     <form action="" method="post" enctype="application/x-www-form-urlencoded">
-        <input type="text" name="name" size="50" placeholder="폰 이름"            required="required" /> <br> 
-        <input type="text"  name="manufacturer" size="50" placeholder="폰 제조사"            required="required" /> <br>
-         <input type="text"  name="price" size="50" placeholder="폰 가격"            required="required" /> <br> 
+        <input type="text" name="phname" size="50" placeholder="폰 이름"            required="required" /> <br> 
+        <input type="text"  name="phfactory" size="50" placeholder="폰 제조사"            required="required" /> <br>
+         <input type="text"  name="phprice" size="50" placeholder="폰 가격"            required="required" /> <br> 
          <input type="button"  id="writeone1" value="작성1" /> 
-         <input type="button"  id="writeone2" value="작성2" /> 
-         <input type="button"  id="writeone3" value="작성3" /> 
-         <input type="button"            id="writeone4" value="작성4" />
     </form>
 </body>
 </html>

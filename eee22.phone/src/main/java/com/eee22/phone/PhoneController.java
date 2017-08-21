@@ -37,14 +37,14 @@ public class PhoneController {
 	}
 	
 	
-	@RequestMapping(value = "/phone/writeone1", method = RequestMethod.POST)
+	@RequestMapping(value = "/phone/writeonelist", method = RequestMethod.POST)
 	public String writeone1(Locale locale, Model model, HttpServletRequest request) {
 		logger.info("writeone1 :: post", locale);
-		String name = request.getParameter("name");
-		String manufacturer = request.getParameter("manufacturer");
-		Integer price = Integer.valueOf(request.getParameter("price"));
+		String phname = request.getParameter("phname");
+		String phfactory = request.getParameter("phfactory");
+		Integer phprice = Integer.valueOf(request.getParameter("phprice"));
 		
-		ModelPhone phone = new ModelPhone(name, manufacturer, price);
+		ModelPhone phone = new ModelPhone(phname, phfactory, phprice);
 		
 		int result = svrphone.insertPhone(phone);
 		

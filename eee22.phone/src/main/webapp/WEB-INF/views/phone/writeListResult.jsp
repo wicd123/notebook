@@ -22,9 +22,9 @@
         <c:forEach var="phone" items="${list }" varStatus="status"> 
         <tr>
             <td>${status.index}</td>
-            <td>${phone.name}</td>
-            <td>${phone.manufacturer}</td>
-            <td>${phone.price}</td>
+            <td>${phone.phname}</td>
+            <td>${phone.phfactory}</td>
+            <td>${phone.phprice}</td>
         </tr>
         </c:forEach>
         <!--  반복 구간 끝 -->

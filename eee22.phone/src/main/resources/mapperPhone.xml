@@ -6,27 +6,27 @@
     
     <select id="getPhoneOne" parameterType="string" resultType="ModelPhone">        
         SELECT *
-          FROM TB_Phone
-         WHERE name = #{name}
+          FROM tbl_phone
+         WHERE name = #{phname}
     </select>
     
     <select id="getPhoneList"  resultType="ModelPhone">
         SELECT *
-          FROM TB_Phone
+          FROM tbl_phone
     </select>
     
     <insert id="insertPhone" parameterType="ModelPhone">
         INSERT INTO 
-        TB_Phone ( name   , manufacturer   , price     )
-        VALUES       ( #{name}, #{manufacturer}, #{price} )
+        tbl_phone ( phname   , phfactory   ,phprice     )
+        VALUES       ( #{phname}, #{phfactory}, #{phprice} )
     </insert>
     
     
     <insert id="insertPhoneList" parameterType="java.util.List">
-        INSERT INTO TB_Phone( name , manufacturer , price  )
+        INSERT INTO tbl_phone( phname , phfactory , phprice  )
         VALUES
             <foreach collection="list" item="item" index="index" open="(" separator="),(" close=")">
-                #{item.name} , #{item.manufacturer} , #{item.price}
+                #{item.phname} , #{item.phfactory} , #{item.phprice}
             </foreach>
     </insert>
     
